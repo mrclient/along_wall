@@ -14,8 +14,8 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-# add_executable(${PROJECT_NAME}_node src/along_wall_node.cpp)
+add_executable(along_wall_cpp src/along_wall.cpp)
 
-# target_link_libraries(${PROJECT_NAME}_node
-#   ${catkin_LIBRARIES}
-# )
+target_link_libraries(along_wall_cpp
+  ${catkin_LIBRARIES}
+)
