@@ -15,7 +15,7 @@ void lidar_callback(const sensor_msgs::LaserScan &scan_msg){
 
 	geometry_msgs::Twist velocity;
 	velocity.linear.x = forw_vel;
-	velociy.angular.z = kp * error;
+	velocity.angular.z = kp * error;
 	vel_pub.publish(velocity);
 }
 
